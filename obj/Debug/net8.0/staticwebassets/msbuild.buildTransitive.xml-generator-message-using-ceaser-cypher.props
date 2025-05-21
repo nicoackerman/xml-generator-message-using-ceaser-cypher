@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/xml-generator-message-using-ceaser-cypher.props" />
+</Project>
