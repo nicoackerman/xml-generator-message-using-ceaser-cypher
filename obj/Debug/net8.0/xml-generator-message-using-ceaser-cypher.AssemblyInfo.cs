@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("xml-generator-message-using-ceaser-cypher")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c4bc05bec58c0ae74c1d4e1537fa4dd5d343f6a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5bf8675ba5ea29e8b3983565f1d55fc15d775a11")]
 [assembly: System.Reflection.AssemblyProductAttribute("xml-generator-message-using-ceaser-cypher")]
 [assembly: System.Reflection.AssemblyTitleAttribute("xml-generator-message-using-ceaser-cypher")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

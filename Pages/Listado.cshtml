@@ -1,4 +1,37 @@
 ﻿@page
-@model xml-generator-message-using-ceaser-cypher.Pages.ListadoModel
+@model xml_generator_message_using_ceaser_cypher.Pages.ListadoModel
 @{
 }
+
+<h2>Listado de Mensajes</h2>
+
+@if (!Model.MensajesEncriptados.Any()) 
+{
+    <p>No hay pacientes registrados.</p>
+}
+else
+{
+    <table border="1">
+        <tr>
+            <th>Remitente</th>
+            <th>MensajeEncriptado</th>
+            <th>Codigo Remitente</th>
+            <th>Fecha De Envio</th>
+            <th>Acciones</th>
+        </tr>
+        @foreach (var sms in Model.MensajesEncriptados)
+        {
+            <tr>
+                <td>@sms.Remitente</td>
+                <td>@sms.MensajeEncriptado</td>
+                <td>@sms.CodigoRemitente</td>
+                <td>@sms.FechaDeEnvio</td>
+                <td><a href="/Exportar?doc=@sms.CodigoRemitente">Exportar XML</a></td>
+            </tr>
+        }
+    </table>
+    <form method="post">
+        <button type="submit" asp-page-handler="onPostExportarTodos">Exportar Todos</button>
+    </form>
+}
+<a href="/Registrar">← Volver a registrar</a>
